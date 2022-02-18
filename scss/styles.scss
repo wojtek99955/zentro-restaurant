@@ -1,0 +1,33 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html{
+    font-size: 10px;
+}
+
+.container{
+    max-width: 1100px;
+    margin:auto;
+}
+
+$baseGrey: #787878;
+$fontsize-section-header: 2.2rem;
+
+@import'mixins';
+@import 'variables';
+@import 'nav';
+@import 'main-section';
+@import 'food-gallery';
+@import 'menu';
+@import 'chefs';
+@import 'contact';
+@import 'info';
+@import 'footer';

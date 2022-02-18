@@ -1,0 +1,90 @@
+.contact{
+    background-color: $lightGreyBackground;
+
+        @include lg{
+            padding: 0 20px;
+        }
+    
+    h2{
+    text-align: center;
+    padding-bottom: 15px;
+    font-size: $fontsize-section-main-header;
+    }
+}
+
+.contact-container{
+    padding: 120px 0;
+}
+
+.contact-line{
+    width:140px;
+    height:2px;
+    background-color: $baseGrey;
+    border: none;
+    margin: auto;
+    margin-bottom: 35px;
+}
+
+form{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    max-width: 90rem;
+
+    .input-container{
+    border: none;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap:30px;
+
+        @include md{
+            flex-direction: column;
+            gap: 15px;
+    }
+    }   
+
+    input{
+        border:none;
+        outline: none;
+        padding: 15px 0;
+        flex-grow: 1;
+    }
+
+    textarea{
+        margin-bottom: 50px;
+        width:100%;
+        border: none;
+        outline: none;
+    }
+
+    ::placeholder{
+        padding: 10px 10px;
+    }
+
+    .contact-btn{
+        padding: 15px 120px;
+        border-radius: 10px;
+        border:2px solid #999;
+        letter-spacing: 2px;
+        transition-property: background-color, color;
+        transition-duration: 0.5s;
+
+
+        @include md{
+            padding: 1.2rem 8rem;
+        }
+
+        @include xs{
+            padding: 1rem 5rem;
+        }
+
+    &:hover{
+        background-color: #999;
+        color: white;
+    }
+    }   
+
+}

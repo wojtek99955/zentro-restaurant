@@ -1,0 +1,113 @@
+.info{
+    background-image: url('../images/footer-bg.jpg');
+    background-attachment: fixed;
+    padding-bottom: 100px;
+    background-size: cover;
+    background-position: center;
+
+    @include xl{
+        padding:0 20px;
+    }
+}
+
+.info-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0;
+
+    @include md{
+        display: block;
+        text-align: center;    
+    }
+}
+
+.location {
+    p{
+        font-size: $fontsize-section-p;
+    }
+}
+
+
+.info-details{
+    color:white;
+    margin-bottom: 1rem;
+}
+
+.info-header{
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.socials-links{
+    display: flex;
+    justify-content: space-between;
+    gap:3.5rem;
+
+    @include md{
+        justify-content: center;
+    }
+}
+
+.info-socials .fa{
+    
+    font-size: 2rem;
+    background-color: white;
+    padding:16px;
+    color:$baseGrey;
+    text-decoration: none;
+    border-radius: 50%;
+
+    @include lg{
+        padding:1.2rem;
+    }
+}
+
+.info-hours_container{
+    @include md{
+        padding: 30px 0;
+    }    
+}
+
+.info-hours{
+    @include md{
+    }
+}
+
+.info-socials{
+    @include xs{
+        margin-top: 4rem;
+    }
+}
+
+.info h3{
+    font-size: $fontsize-section-h3;
+    @include lg{
+        font-size: 1.6rem;
+    }
+}
+
+.days{
+    font-weight: 400;
+}
+
+
+.info-hours_grid{
+    display:flex;
+    gap:20px;
+
+    @include md{
+        justify-content: center;
+    }
+
+}
+
+.hours{
+    font-size: 18px;
+    margin-bottom: 1rem;
+    color: white;
+
+    @include md{
+        font-size: 1.6rem;
+    }
+}
